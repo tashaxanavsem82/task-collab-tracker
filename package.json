@@ -1,0 +1,22 @@
+{
+  "name": "task-collab-tracker",
+  "version": "1.0.0",
+  "description": "A lightweight web application for teams to collaboratively track tasks, assign responsibilities, and monitor project progress in real-time.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently "npm run server" "npm run client""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "dotenv": "^8.2.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
