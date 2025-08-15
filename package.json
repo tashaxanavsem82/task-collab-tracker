@@ -1,7 +1,7 @@
 {
   "name": "task-collab-tracker",
   "version": "1.0.0",
-  "description": "A lightweight web application for teams to collaboratively track tasks, assign responsibilities, and monitor project progress in real-time.",
+  "description": "A lightweight web application enabling teams to collaboratively track tasks, assign responsibilities, and monitor project progress in real-time.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
