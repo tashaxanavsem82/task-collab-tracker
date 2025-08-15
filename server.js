@@ -15,6 +15,12 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
 app.get('/', (req, res) => {
   res.send('API is running');
 });
